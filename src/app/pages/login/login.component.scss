@@ -1,12 +1,9 @@
-.example-container{
-    display: flex;
-            background: lightgrey;
-            margin: auto;
-            justify-content: center;
-
+.size-200{
+    width: 455px;
 }
-
-mat-form-field{
-    margin: 1%;
-    
+.column{
+    background-color: lightgray;
 }
+.form_field{
+    padding: 1% !important; 
+}    

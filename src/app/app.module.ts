@@ -26,7 +26,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { LoginComponent } from './pages/login/login.component';
 import { NgxMatFileInputModule } from '@angular-material-components/file-input';
-
+import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { LayoutModule } from '@angular/cdk/layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,10 @@ import { NgxMatFileInputModule } from '@angular-material-components/file-input';
     GridComponent,
     ProgressBarComponent,
     SelectComponent,
-    LoginComponent
+    LoginComponent,
+    AutocompleteComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -56,6 +62,10 @@ import { NgxMatFileInputModule } from '@angular-material-components/file-input';
     MatSelectModule,
     ReactiveFormsModule,
     MatCardModule,
+    MatAutocompleteModule,
+    LayoutModule,
+    FlexLayoutModule, //npm i @angular/flex-layout
+    
     NgxMatFileInputModule //para utilizar este modulo hay que instalar: npm i @angular-material-components/file-input
     
     

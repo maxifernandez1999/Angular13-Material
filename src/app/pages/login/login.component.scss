@@ -1,9 +1,18 @@
-.size-200{
-    width: 455px;
+.principal {
+  background-color: gray;
+  height: 100%;
+  width: 100%;
 }
-.column{
-    background-color: lightgray;
+.form {
+  background-color: lightgrey;
+  padding: 1%;
+  border-radius: 2%;
+  border: 1px black solid;
 }
-.form_field{
-    padding: 1% !important; 
-}    
+mat-form-field {
+  margin: 1%;
+  width: 300px;
+}
+.only_field {
+  width: 600px;
+}

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-button',
@@ -12,7 +11,5 @@ export class ButtonComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  inputControl = new FormControl('', Validators.required);
-  
 
 }

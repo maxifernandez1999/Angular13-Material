@@ -17,6 +17,8 @@ export class LoginComponent implements OnInit {
   accept="image/png, image/jpeg"
   color: ThemePalette = 'primary';
   nameControl = new FormControl('', Validators.required);
+  dniControl = new FormControl('', Validators.required);
+  ageControl = new FormControl('', Validators.required);
   socialWorkControl = new FormControl('', Validators.required);
   lastNameControl = new FormControl('', Validators.required);
   fileControl = new FormControl('', Validators.required);

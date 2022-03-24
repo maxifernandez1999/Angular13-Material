@@ -33,6 +33,9 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { InputComponent } from './components/input/input.component';
 import { ButtonComponent } from './components/button/button.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { RippleComponent } from './components/ripple/ripple.component';
+import {MatRippleModule} from '@angular/material/core';
+import { HomeComponent } from './pages/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +48,9 @@ import {MatDividerModule} from '@angular/material/divider';
     AutocompleteComponent,
     LayoutComponent,
     InputComponent,
-    ButtonComponent
+    ButtonComponent,
+    RippleComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -69,6 +74,7 @@ import {MatDividerModule} from '@angular/material/divider';
     LayoutModule,
     FlexLayoutModule, //npm i @angular/flex-layout
     MatDividerModule,
+    MatRippleModule,
     NgxMatFileInputModule //para utilizar este modulo hay que instalar: npm i @angular-material-components/file-input
     
     

@@ -1,0 +1,28 @@
+.example-ripple-container {
+    cursor: pointer;
+    text-align: center;
+  
+    width: 350px;
+    height: 350px;
+    line-height: 350px;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .image{
+    width: 200px;
+    height: 200px;
+    margin: 20%;
+    line-height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+  }
+
+
+  

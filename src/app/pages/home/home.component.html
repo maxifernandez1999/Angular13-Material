@@ -1,5 +1,18 @@
-<div class="principal" fxLayout="row" fxLayoutAlign="space-evenly center">
-    <app-ripple [html]="'../../../assets/enter.png'"></app-ripple>
-    <app-ripple [html]="'../../../assets/doctor.png'"></app-ripple>
-    <app-ripple [html]="'../../../assets/sneezing.png'"></app-ripple>
-</div>
+
+    <div class="principal" fxLayout="row" fxLayoutAlign="space-evenly center">
+        <div class="div-home">
+            <app-ripple [html]="'../../../assets/enter.png'" [name]="'login'" (click)="openDialog()"></app-ripple>
+            <h1 class="h1-title">Login</h1>
+        </div>
+        <div>
+            <app-ripple [html]="'../../../assets/doctor.png'" [name]="'login'"></app-ripple>
+            <h1 class="h1-title">Specialist Register</h1>
+        </div>
+        <div>
+            <app-ripple [html]="'../../../assets/sneezing.png'" [name]="'login'"></app-ripple>
+            <h1 class="h1-title">Patient Register</h1>
+        </div>
+        
+        
+    </div>
+

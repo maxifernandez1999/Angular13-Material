@@ -21,7 +21,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { SelectComponent } from './components/select/select.component';
 import {MatSelectModule} from '@angular/material/select';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { LoginComponent } from './pages/login/login.component';
 import { NgxMatFileInputModule } from '@angular-material-components/file-input';
@@ -36,6 +36,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import { RippleComponent } from './components/ripple/ripple.component';
 import {MatRippleModule} from '@angular/material/core';
 import { HomeComponent } from './pages/home/home.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { OpenDialogComponent } from './components/open-dialog/open-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +53,9 @@ import { HomeComponent } from './pages/home/home.component';
     InputComponent,
     ButtonComponent,
     RippleComponent,
-    HomeComponent
+    HomeComponent,
+    DialogComponent,
+    OpenDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -75,6 +80,8 @@ import { HomeComponent } from './pages/home/home.component';
     FlexLayoutModule, //npm i @angular/flex-layout
     MatDividerModule,
     MatRippleModule,
+    MatDialogModule,
+    FormsModule,
     NgxMatFileInputModule //para utilizar este modulo hay que instalar: npm i @angular-material-components/file-input
     
     

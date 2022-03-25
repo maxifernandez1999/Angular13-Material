@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="outline" >
+        <mat-label>Social Work</mat-label>
+        <input [formControl]="nameControl" required matInput placeholder="eg. Fernandez">
+        <mat-error *ngIf="nameControl.hasError('required')">Please enter name</mat-error>
+        <mat-icon matSuffix>health_and_safety</mat-icon>
+        <mat-hint>Valid</mat-hint>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <!--En [mat-dialog-close] se envia informacion hacia otra componente-->
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+</div>

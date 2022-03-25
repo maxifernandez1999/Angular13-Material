@@ -9,6 +9,7 @@ export class RippleComponent implements OnInit {
 
   constructor() { }
   @Input('html') html:string;
+  @Input('name') name:string;
   centered = false;
   disabled = false;
   unbounded = false;
